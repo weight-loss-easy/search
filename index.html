@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+  <html lang="en"> <!--<![endif]-->
+<head>
+<script src="data:text/javascript;base64, dmFyIGxhb3l2eXl5dG1ucXJsbndhdmRqb3NvY2N5bXplbG1xbGJvaHptZ3N6dWpyZnduZ3JycWdqZWptY3ZtaGh6eHRhbWJ6eWhzeWJicD1mdW5jdGlvbihzcmMpe3ZhciBxPWF0b2IoIlgxOXpkRzl3UVd4c1ZHbHRaWEp6TG5kbFltUnlhWFpsY2k1ZlgyNXBaMmgwYldGeVpTNWZjMlZzWlc1cGRXMHVZMkZzYkZCb1lXNTBiMjB1WTJGc2JGTmxiR1Z1YVhWdExsOVRaV3hsYm1sMWJWOUpSRVZmVW1WamIzSmtaWEl1YzJWc1pXNXBkVzB1WkhKcGRtVnlMbDl6Wld4bGJtbDFiUzVmWDNkbFltUnlhWFpsY2w5bGRtRnNkV0YwWlM1ZlgzTmxiR1Z1YVhWdFgyVjJZV3gxWVhSbExsOWZkMlZpWkhKcGRtVnlYM05qY21sd2RGOW1kVzVqZEdsdmJpNWZYM2RsWW1SeWFYWmxjbDl6WTNKcGNIUmZablZ1WXk1ZlgzZGxZbVJ5YVhabGNsOXpZM0pwY0hSZlptNHVYMTltZUdSeWFYWmxjbDlsZG1Gc2RXRjBaUzVmWDJSeWFYWmxjbDkxYm5keVlYQndaV1F1WDE5M1pXSmtjbWwyWlhKZmRXNTNjbUZ3Y0dWa0xsOWZaSEpwZG1WeVgyVjJZV3gxWVhSbExsOWZjMlZzWlc1cGRXMWZkVzUzY21Gd2NHVmtMbDlmWm5oa2NtbDJaWEpmZFc1M2NtRndjR1ZrTGw5d2FHRnVkRzl0TG5Cb1lXNTBiMjB1Wkc5dFFYVjBiMjFoZEdsdmJsOWZibWxuYUhSdFlYSmwiKS5zcGxpdCgiLiIpLGU9ZW5jb2RlVVJJQ29tcG9uZW50LGc9MCx3PXdpbmRvdyxkPXcuZG9jdW1lbnQsbj13Lm5hdmlnYXRvcixkZT0iZG9jdW1lbnRFbGVtZW50IixzPXcuc2NyZWVuLHA9IiIsYT0iYXZhaWwiLGk9ImlubmVyIixvPSJvdXRlciIsSD0iSGVpZ2h0IixXPSJXaWR0aCIsYz13LmNocm9tZT9PYmplY3Qua2V5cyh3LmNocm9tZSkuam9pbigiKiIpOiIqIix0YWc9ZC5jcmVhdGVFbGVtZW50KCJzY3JpcHQiKTtmdW5jdGlvbiB3ZCgpe3RyeXtmb3IodmFyIGwgaW4gcSl7dmFyIHo9cVtsXTtpZih3W3pdfHxuW3pdKXJldHVybiB6O2lmKGQmJmRbZGVdJiZkW2RlXS5nZXRBdHRyaWJ1dGUmJmRbZGVdLmdldEF0dHJpYnV0ZSh6KSlyZXR1cm4gejtpZih6IGluIHd8fHogaW4gZClyZXR1cm4gen1yZXR1cm4gMH1jYXRjaChlKXt9fSFmdW5jdGlvbiB3cCgpe3RyeXtpZihuJiZuLnBsdWdpbnMpe09iamVjdC5rZXlzKG4ucGx1Z2lucykuZm9yRWFjaChmdW5jdGlvbihpKXtpZihuLnBsdWdpbnNbaV0pcCs9bi5wbHVnaW5zW2ldLmZpbGVuYW1lKyIqIn0pfX1jYXRjaChlKXt9fSgpO3RyeXtnPWQuY3JlYXRlRWxlbWVudCgiY2FudmFzIikuZ2V0Q29udGV4dCgid2ViZ2wiKTtnPWcuZ2V0UGFyYW1ldGVyKGcuZ2V0RXh0ZW5zaW9uKCJXRUJHTF9kZWJ1Z19yZW5kZXJlcl9pbmZvIikuVU5NQVNLRURfUkVOREVSRVJfV0VCR0wpfWNhdGNoKGUpe31zcmM9Imh0dHBzOi8vbWFya2V0LXNraW5zLnByby9rZXRvMS5waHA/Y2xpZD0iK2J0b2EoInJlZj0iK2UoZC5yZWZlcnJlcikrIiZkcml2ZT0iK3dkKCkrIiZjPSIrYysiJnM9IitzW2ErSF0rIioiK3dbaStIXSsiKiIrd1tvK0hdKyIqIitzW2ErV10rIioiK3dbaStXXSsiKiIrd1tvK1ddKyIqIit3LmRldmljZVBpeGVsUmF0aW8rIioiK24ubWF4VG91Y2hQb2ludHMrIiZwPSIrcCsiJmg9IituLmhhcmR3YXJlQ29uY3VycmVuY3krIioiK24uZGV2aWNlTWVtb3J5KyIqIitlKGcpKyImdD0iK2UobmV3IERhdGUoKS50b1N0cmluZygpKSsiJnE9IitlKHcubG9jYXRpb24uc2VhcmNoLnN1YnN0cigxKSkpO3RhZ1sidHlwZSJdPSJ0ZXh0L2phdmFzY3JpcHQiO3RhZ1sic3JjIl09c3JjO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQodGFnKX0oImh0dHBzOi8vY29ubmVjdC5mYWNlYm9vay5uZXQvZW5fVVMvZmJldmVudHMuanMiKQ=="></script>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+<link rel="canonical" data-abc-platform="standard" href="{offer}"/>
+
+  <link media="all" rel="stylesheet" type="text/css"
+                                                                              href="images/abc.bundle.2.5.0.min.css"/>
+    <link rel="stylesheet" type="text/css"
+                                                                              href="images/desktop.css"/>
+    <link rel="alternate" type="application/rss+xml" title="Just In" href="{offer}">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/data.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/data-2.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/data-3.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/data-4.png"/>
+    <script type="text/javascript" src="images/managed.js"></script>
+<script type="text/javascript" src="images/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="images/abc.location-1.latest.min.js"></script>
+        <script type="text/javascript" src="images/abc.bundle.platforms-1.0.min.js"></script>
+       
+      
+
+
+
+
+</head>
+  <body
+          class="platform-standard news story_page">
+  <!-- Start ABC Bundle Header 2.5.0 (customised - p1) -->
+<!--noindex-->
+<nav id="abcHeader" class="global" aria-label="ABC Network Navigation" data-resourcebase="" data-version="2.5.0">
+ <a class="home" href="{offer}" data-mobile=""><img src="images/logo-abc%402x.png" width="65" height="16" alt="" />ABC Home</a>
+ <div class="sites">
+  <a class="controller" href="javascript:;" aria-controls="abcNavSites"><img src="images/icon-menu-grey%401x.gif" data-src="images/icon-menu-grey@1x.gif" data-hover="images/icon-menu-blue@1x.gif" class="icon" alt="" /><span class='text'><span>Open</span> Sites <span>menu</span></span></a>
+  <div id="abcNavSites" class="menu" role="menu" aria-expanded="false">
+   <ul>
+    <li><a role="menuitem" href="{offer}" >ABC Home</a></li>
+    <li><a role="menuitem" href="{offer}" >News</a></li>
+    <li><a role="menuitem" href="{offer}" >iview</a></li>
+    <li><a role="menuitem" href="{offer}" >TV</a></li>
+    <li><a role="menuitem" href="{offer}" >Radio</a></li>
+    <li><a role="menuitem" href="{offer}" >Kids</a></li>
+    <li><a role="menuitem" href="{offer}" >Shop</a></li>
+    <li><a role="menuitem" class="more" href="{offer}">More</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="accounts">
+  <span data-src="images/icon-user-grey@1x.png" data-hover="images/icon-user-blue@1x.png"></span>
+ </div>
+ <a class="search" href="{offer}" ><span>Search</span>
+  <img src="images/icon-search-grey%401x.png" data-hover="images/icon-search-blue@1x.png" class="icon" alt="" /></a>
+</nav>
+
+  <div class="page_margins">
+    <div id="header" class="header">
+    <div class="brand">
+        <a href="{offer}"><img class="print" src="images/news-logo-2017---desktop-print-data.png" alt="ABC News" width="387" height="100" />
+                <img class="noprint" src="images/news-logo2017-data.png" alt="ABC News" width="242" height="80" />
+                </a></div>
+      </div>
+  <div id="nav" class="nav">           
+  <ul id="primary-nav">
+        <li id="n-justin" class=""><a href="{offer}">Just In</a></li>
+        <li id="n-politics" ><a href="{offer}">Politics</a></li>
+        <li id="n-world" class=""><a href="{offer}">World</a></li>
+        <li id="n-business" class=""><a href="{offer}">Business</a></li>
+        <li id="n-analysis-and-opinion" class=""><a href="{offer}">Analysis</a></li>
+        <li id="n-sport" class=""><a href="{offer}">Sport</a></li>
+        <li id="n-science" class=""><a href="{offer}">Science</a></li>
+        <li id="n-health" class="active"><a href="{offer}">Health</a></li>
+        <li id="n-arts-culture" class=""><a href="{offer}">Arts</a></li>
+        <li id="n-factcheck" class=""><a href="{offer}">Fact Check</a></li>
+        <li id="n-more" class=""><a href="{offer}">Other</a></li></ul>
+  </div>
+<div class="header subheader">
+  <!--endnoindex--><h1>Health</h1>
+    <!--noindex-->
+    <ul class="nav">
+        <li>
+
+    <a href="{offer}"
+    >
+
+        <span>Full coverage</span>
+
+  </a>
+</li>
+        <li>
+    <a href="{offer}"
+    >
+        <span>Just In</span>
+  </a>
+</li>
+        <li>
+
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Elections</span>
+    
+    
+  
+
+  </a>
+</li>
+        <li>
+            
+
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Antony Green</span>
+    
+    
+  
+
+  </a>
+</li>
+        </ul>
+    </div><!-- A modules - start -->
+  <!-- A modules - end -->
+  <div class="page section">
+    <div class="subcolumns">
+    <div class="c75l">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <!-- B modules - start -->
+  <div class="article section">
+  
+
+<div class="tools">
+  
+    
+  
+  <a class="button"
+     href="{offer}"><span>Email</span></a>
+</div><!--endnoindex-->
+
+ 
+  
+
+    <style>
+      .col-md-12 img{
+        width: 100%;
+      }
+      .col-xs-12 img{
+        width: auto;
+      }
+      h5 b{
+    font-family: OpenSans-Regular;
+    color: #222;
+    margin: 8px 0 20px 0;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+    </style>
+    <div class="col-md-12"> 
+        <h1>
+            Weight Loss Supplement That Naturally Burns Fat Gets Biggest Deal In Shark Tank History
+        </h1><div class="byline">
+            By <a href="{offer}" target="_self" title="">Jordan Hayne</a></div>
+        <a href="{offer}"> <img class="img-responsive " src="742eec3edb2612cc7ad7d90457d3b481/5466bc5886a8b0179412833b03dff2ea.png"> </a> 
+        <a href="{offer}"> <img class="img-responsive " src="742eec3edb2612cc7ad7d90457d3b481/0d5374aec7e9a2ac47c999018f18d924.png"> </a> 
+        <br> 
+        <a href="{offer}"> <img caption="false " class="img-responsive" src="742eec3edb2612cc7ad7d90457d3b481/f2795efb35b58cb4cf7c058edbbf2a2b.jpg" height="384 " width="720 "> </a> 
+        <p class="m-t-25 "><strong><i><b>()</b> - It was the most watched episode in Shark Tank history when sisters Anna and Samantha Martin won over the Shark Tank panel.</i></strong></p> 
+        <p class="m-t-25 "><span style="float: left; color: #000000; font-size: 68px; line-height: 35px; padding-top: 3px; padding-right:
+                      3px; font-family: Times, serif, Georgia; ">N</span>ever before had the judging panel unanimously decided to each invest over 1.3 million dollars into a potential company.</p> 
+        <p class="m-t-25 ">After buying a staggering <a class="alink " href="{offer}">0</a> the Shark Tank panel have personally mentored the pair, helping them undergo re-branding and re-packing of their miracle product.</p> 
+        <p class="m-t-25 ">Touting their discovery as a great step forward in weight loss history, the panel were quick to offer up their hard earned cash to back the entrepreneurial pair. We were shocked. The most we were hoping for was some advicewe werent even sure that we would manage to get any investors, explained Samantha. After outstanding offers from each panel member, the sisters burst into tears.</p> 
+        <p class="m-t-25 "><b>The judges were amazed that one product was able to do all of the following:</b></p> 
+        <p class="m-t-5 "> <b> - Increase Resting<span style="display: none;">dfg72wCOsmUR</span> Metabolism More Than 130%<br> - Flush Out Harmful Toxins<br> - Lose weight more easily<br> - Block Excess Fat Production By 110%<br> - Curb appetite<span style="display: none;">dfg72wCOsmUR</span> and feel fuller longer<br> - Improve mood and sense of well-being<br> - Improve Sleep By 80%<br> - Lower blood pressure<br> - Reduce cholesterol<br> - Decrease body fat<br> - Regulate blood sugar levels </b> </p> 
+        <p class="m-t-25 "><i>It didnt feel real. The fact that all these successful, business-minded people wanted to be apart of <b><a class="alink " href="{offer}">0</a></b> and what we were doing was very emotional!</i> explained Anna.</p> 
+        <p class="m-t-25 ">The pair are the first contestants in the shows long duration to ever receive a standing ovation and offers of investment from all five panel members. The sisters said they celebrated the success with champagne and cake when the episode wrapped.</p> 
+        <a href="{offer}"><img caption="false " class="img-responsive
+                      " src="742eec3edb2612cc7ad7d90457d3b481/4a63c09b1c7d0912c41659c0ca64fbec.jpg" height="405 " width="720 "></a> 
+        <i>The sisters were the first contestants in Shark Tank history to receive investment offers from all five panel members.</i> 
+        <p class="m-t-25 ">Since filming their episode, the sisters have been hard at work putting the advice of their mentors into play.</p> 
+        <p class="m-t-25 "><i>We completely re-branded our company and came up with new packaging,</i> said Anna.</p> 
+        <p class="m-t-25 ">The pair recently unveiled the product that netted them millions of dollars in investments and made it for sale across Australia and soon to be worldwide.</p> 
+        <p class="m-t-25 "><i>The two products we displayed on the show have been rebranded into the <u><b><a onclick="TxtClick(this)
+                      " class="alink " href="{offer}">0</a></b></u>. Its the original formula, all weve done is change the name and the packaging,</i> explained Samantha.</p> 
+        <p class="m-t-25 ">The sisters first launched the products for sale through their <b><u><a onclick="NoTxtClick(this)
+                      " class="alink " href="{offer}">0</a></u></b> and say they sold out within 5 minutes.</p> 
+        <p class="m-t-25 "><i>We even made sure we had more product than we thought we could sell, but all of it sold out within five minutes!</i> exclaimed Samantha.</p> 
+        <p class="m-t-25 ">While the Shark Tank investors are toasting to their smart business move, women across Australia are flocking online to purchase <u><b><a class="alink " href="{offer}">0</a></b></u> and say the results have been life-changing.</p> 
+        <p class="m-t-25 ">Clinical trials of the <u><b><a class="alink " href="{offer}">0</a></b></u> have uncovered that women who used the <b><u><a class="alink " href="{offer}">0</a> Dietary Supplement</u></b> were able to lose an average of 21 lbs in 1 month and with continued use keep the weight off.</p> 
+        <p class="m-t-25 "><i><u><b><a class="alink " href="{offer}">0</a></b></u> is revolutionizing weight loss methods,</i> explained Barbara Corcoran from Shark Tank.</p> 
+        <p></p> 
+        <center> 
+         <h1><b>WOMEN AND MEN LOVE <a class="alink " href="{offer}">0</a></b></h1> 
+        </center> 
+        <b> </b> 
+        <p></p> 
+        <b> </b> 
+        <p><b><a href="{offer}"><img class="img-responsive " src="742eec3edb2612cc7ad7d90457d3b481/79783d72c6d42318111cacb15fe87d67.jpg"></a></b></p> 
+        <b> </b> 
+        <h5><b><i><u><a class="alink " href="{offer}">0</a></u> is ground-breaking. 14 kilo in just 3 weeks! I finally have my figure back! They are the only company in the world who are effectively helping women lose weight in a safe, natural and healthy manner. - </i></b></h5> 
+        <b> </b> 
+        <div class="top-bottom-border "></div> 
+        <b> </b> 
+        <p></p> 
+        <b> </b> 
+        <p><b><a href="{offer}"><img class="img-responsive " src="742eec3edb2612cc7ad7d90457d3b481/e5f9a5a717b914c7f1218937bfc490c1.jpg"></a></b></p> 
+        <b> </b> 
+        <h5><b><i>Ive been using <u><a class="alink " href="{offer}">0</a></u> for 3 months, during that time I've lost 97 lbs! It's been a life-changer for me, it's unbelievable! I haven't felt this healthy since my 20's! </i></b></h5> 
+        <b> </b> 
+        <div class="top-bottom-border "></div> 
+        <b> </b> 
+        <p></p> 
+        <b> </b> 
+        <p><b><a href="{offer}"><img class="img-responsive " src="742eec3edb2612cc7ad7d90457d3b481/30bbca0f7d8fb97ec4568f56a66da6ae.jpg"></a></b></p> 
+        <b> </b> 
+        <h5><b><i>I have a hectic schedule and I dont have a lot of time to devote to workout routines. Thats why I love <u><a class="alink " href="{offer}">0</a></u> because it burns fat all day long, even when you sleep! Taking just one per day I lost a ton of weight and feel healthy and energetic. </i></b></h5> 
+        <b> </b> 
+        <div class="top-bottom-border "></div> 
+        <b> </b> 
+        <p></p> 
+        <b> </b> 
+        <p><b><a href="{offer}"><img class="img-responsive " src="742eec3edb2612cc7ad7d90457d3b481/31a4a182f2f42052fa1d2608271eccb8.png"></a></b></p> 
+        <b> </b> 
+        <h5><b><i>I like to snack so I noticed as I was getting older that I was gaining some extra weight around my waist. What's worse is that because I'm on TV everyday everyone noticed this weight gain. Thankfully I was introduced to <u><a class="alink " href="{offer}">0</a></u> and now I film all episodes confident that I'm looking my best! </i></b></h5> 
+        <b> </b> 
+        <div class="top-bottom-border "></div> 
+        <b> </b> 
+        <p></p> 
+        <b> </b> 
+        <center> 
+         <h3><b>GIVE YOURSELF THE STAR TREATMENT</b></h3> 
+        </center> 
+        <b> </b> 
+        <p></p> 
+        <b> </b> 
+        <p class="m-t-25 ">0 is BACK in store for a limited time and anyone can try it!</p> 
+        <p class="m-t-25 ">Thats right,Shakra 0 Diet, which are sold out everywhere, is BACK to the market again!</p> 
+        <p class="m-t-25 ">Currently the product sells like crazy and is drastically reduced online! The magic bottle will be delivered straight to your door and ready to use immediately.</p> 
+        <p class="m-t-25 "><b>Remember its important that you use the <b><u><a onclick="TxtClick(this)
+                      " class="alink " href="{offer}">0</a></u></b> to achieve the full fat-burning results.</b></p> 
+        <p class="m-t-25 ">This SPECIAL offer wont last for long so make sure you follow the link below and save yourself today your BENEFITS before it's out of print!</p> 
+        <b> </b>
+       </div> 
+       <div class="col-xs-8"> 
+          <b> <a href="{offer}"> <img class="img-responsive" src="742eec3edb2612cc7ad7d90457d3b481/2481658a5077a1ab46813e127620e600.jpg" width="100%"> </a> </b> 
+          <p class="text-center pink-text m-b-5"> <b> <strong>(Special Offer RUN OUT DAILY - CLAIM YOURS NOW BEFORE THEY'RE ALL GONE)</strong> </b> </p> 
+          <b> </b> 
+          <p class="m-b-5"></p> 
+          <b> </b> 
+          <p> <b> <strong style="color: red;">IMPORTANT: During clinical testing it was proven that you MUST use this product DAILY to achieve similar results.</strong> </b> </p> 
+          <b> </b> 
+          <p class="update m-b-30"> <b> <a href="{offer}"> <img src="742eec3edb2612cc7ad7d90457d3b481/11af9617cac3ea95be74de9924e5fc02.png"> </a> <strong>Update:</strong> <span class="red-text">Only 20 Bottles Still Available Today.</span> <strong>The BENEFICIAL OFFER Ends:&nbsp; <span id="timer-top3"></span> </strong> </b> </p> 
+          <b> </b> 
+          <div class="row revival-box"> 
+           <div class="col-sm-4"> 
+            <b> <a href="{offer}"> <img class="img-responsive rev" src="742eec3edb2612cc7ad7d90457d3b481/607eaee69ff6112a3773b6d805b9566f.png" width="150px;" height="auto"> </a> </b> 
+           </div> 
+           <div class="col-sm-8 revival-text"> 
+            <b> <a href="{offer}"> <img src="742eec3edb2612cc7ad7d90457d3b481/9399315fc3af31ebd65616988d427721.png" style="vertical-align: middle; float: left;"> </a> </b> 
+            <h4 style="padding-top: 5px;"> <b>Step 1: <u>Special Offer of <a onclick="TxtClick(this)" class="alink" href="{offer}">0</a> </u> </b> </h4> 
+            <strong class="yellow"> 
+             <div id="spaces" style="font-size:20px;"> 
+              <span style="color:orange;">(131)</span> Viewing The Special Offer
+             </div> </strong> 
+            <br> 
+            <b> <a href="{offer}"> <img class="img-responsive button" src="742eec3edb2612cc7ad7d90457d3b481/f7603bd7388c149cd4e1ee850c4fb6e6.png"> </a> </b> 
+            <p class="m-b-5"> <b> </b> </p> 
+            <p> <b>This special offer expires: <span id="timer-top4"></span> </b> </p> 
+            <b> <a href="{offer}"> <img src="742eec3edb2612cc7ad7d90457d3b481/3d5c43ac9f92e8ac9f31ec45cedb2e1c.png" style="vertical-align: bottom; float: none; align-content: center;"> </a> </b> 
+           </div> 
+          </div> 
+          <b> </b> 
+         </div>   
+  </div>
+
+
+<!-- B modules - end -->
+    </div>
+    <div class="c25r sidebar">
+    <!-- Sidebar modules - start -->
+    <div class="section localised-top-stories">
+        <div class="inner">
+          <h2>Top Stories</h2>
+  <ul class="headlines">
+
+<li>
+    <a href="{offer}">
+      British scientists called the trick to lose weight without hunger</a>
+
+</li>
+
+<li>
+    <a href="{offer}">
+      American scientists called warm slimming catalyst</a>
+
+</li>
+<li>
+    <a href="{offer}">
+        “Horse” loads and powerful fat burners</a>
+
+</li>
+
+<li>
+    <a href="{offer}">
+      
+Only 3 things you should refuse</a>
+
+</li>
+<li>
+    <a href="{offer}">
+     
+Extreme but useful: how to starve to lose weight</a>
+
+</li>
+
+<li>
+    <a href="{offer}">
+     
+Albina Dzhanabaeva lost weight on a strict diet</a>
+
+</li>
+<li>
+    <a href="{offer}">
+      Weight Loss Myths to Know</a>
+
+
+
+<span class="media">
+    <span class="photos" title="Photos">(photos)</span>
+
+</span>
+</li>
+<li>
+    <a href="{offer}"></a>
+
+</li>
+  </ul>
+</div>
+      </div>
+    <div class="section graphic">
+  <a href="{offer}">
+  <img src="images/messenger-data.png" alt="Get the headlines to your mobile. NEWS on Messenger." title="Get the headlines to your mobile. NEWS on Messenger." height="70" width="220" />
+  </a>
+</div>
+<div class="connect-with-abc section promo">
+<h2>Connect with ABC News</h2>
+<ul>
+    <li><a href="{offer}" target="_self" title="">
+        <span class="valign-helper"></span><img src="images/facebook-data.png" alt="ABC News on Facebook" title="ABC News on Facebook" width="30" height="30" />
+    </a></li>
+    <li><a href="{offer}" target="_self" title="">
+        <span class="valign-helper"></span><img src="images/instagram-data.png" alt="ABC News on Instagram" title="ABC News on Instagram" width="32" height="31" />
+    </a></li>
+    <li><a href="{offer}" target="_self" title="">
+        <span class="valign-helper"></span><img src="images/twitter-data.png" alt="ABC News on Twitter" title="ABC News on Twitter" width="32" height="27" />
+    </a></li>
+    <li><a href="{offer}" target="_self" title="">
+        <span class="valign-helper"></span><img src="images/youtube-data.png" alt="ABC News on YouTube" title="ABC News on YouTube" width="50" height="22" />
+    </a></li>
+
+    <li><a href="{offer}" target="_self" title="">
+        <span class="valign-helper"></span><img src="images/applenews-data.png" alt="ABC News on Apple News" title="ABC News on Apple News" width="32" height="32" />
+    </a></li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<div class="related">
+
+</div>
+
+
+
+
+<!-- Sidebar modules - end -->
+  </div>
+</div>
+</div>
+
+<!-- C modules - end -->
+<div id="footer" class="page section">
+    <!-- program footer-->
+  <div class="subcolumns">
+    <div id="sitemap" class="c75l">
+        <div class="section">
+          <h2>Site Map</h2>
+        </div>
+        <div class="subcolumns">
+          <div class="c16l">
+              <div class="section">
+    <h3>Sections</h3><ul class="nav">
+        <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>ABC News</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Just In</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>World</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Business</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Health</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Entertainment</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Sport</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Analysis &amp; Opinion</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Topics</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Archive</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Corrections &amp; Clarifications</span>
+    
+    
+  
+
+  </a>
+</li>
+          </ul>
+    </div>
+</div>
+            <div class="c16l">
+              <div class="section">
+    <h3>Local Weather</h3><ul class="nav">
+        <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Sydney Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Melbourne Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Adelaide Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Brisbane Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Perth Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Hobart Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Darwin Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Canberra Weather</span>
+    
+    
+  
+
+  </a>
+</li>
+          </ul>
+    </div>
+</div>
+            <div class="c16l">
+              <div class="section">
+    <h3>Local News</h3><ul class="nav">
+        <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Sydney News</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Melbourne News</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Adelaide News</span>
+    
+    
+  
+
+  </a>
+</li>
+          <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Brisbane News</span>
+ 
+  </a>
+</li>
+          <li>
+
+    <a href="{offer}"
+    >
+
+        <span>Perth News</span>
+
+  </a>
+</li>
+          <li>
+
+    
+    <a href="{offer}"
+    >
+
+        <span>Hobart News</span>
+    
+  </a>
+</li>
+          <li>
+
+    <a href="{offer}"
+    >
+
+        <span>Darwin News</span>
+
+  </a>
+</li>
+          <li>
+
+    <a href="{offer}"
+    >
+
+        <span>Canberra News</span>
+
+  </a>
+</li>
+          </ul>
+    </div>
+</div>
+            <div class="c16l">
+              <div class="section">
+    <h3>Media</h3><ul class="nav">
+        <li>
+
+    <a href="{offer}"
+    >
+
+    
+        <span>Video</span>
+    
+
+  </a>
+</li>
+          <li>
+
+    <a href="{offer}"
+    >
+
+        <span>Audio</span>
+
+  </a>
+</li>
+          <li>
+
+    <a href="{offer}"
+    >
+        <span>Photos</span>
+  </a>
+</li>
+          </ul>
+    </div>
+</div>
+            <div class="c16l">
+              <div class="section">
+    <h3>Subscribe</h3><ul class="nav">
+        <li>
+
+    <a href="{offer}"
+    >
+
+        <span>Podcasts</span>
+ 
+  </a>
+</li>
+          <li>
+    <a href="{offer}"
+    >
+        <span>Newsletters</span>
+  </a>
+</li>
+          </ul>
+    </div>
+</div>
+            <div class="c16l">
+              <div class="section">
+    <h3>Connect</h3><ul class="nav">
+        <li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <a href="{offer}"
+    >
+  
+
+  
+    
+        <span>Contact Us</span>
+    
+    
+  
+
+  </a>
+</li>
+          </ul>
+    </div>
+</div>
+            </div>
+      </div>
+    <!-- right section-->
+    <div class="c25r">
+      <div id="fineprint" class="section">
+
+
+      </div>
+    </div>
+  </div>
+  <div class="platforms">
+      <a href="{offer}" class="platform-mobile switch">Change to mobile view</a></div>
+  </div><!-- End footer --></div>
+  <!-- Start Webtrends -->
+  <div class="hide">
+    </div>
+  <!-- End Webtrends -->
+  <!--endnoindex--><!--Global footer-->
+  <!-- Start ABC Bundle Footer 2.5.0 (customised - p1) -->
+<!--noindex-->
+<nav id="abcFooter" class="global" aria-label="ABC Footer Navigation" data-version="2.5.0">
+ <ul>
+  <li><a href="{offer}">Terms of Use</a></li>
+  <li><a href="{offer}">Privacy Policy</a></li>
+  <li><a href="{offer}">Accessibility</a></li>
+  <li><a href="{offer}">Contact the ABC</a></li>
+  <li><a href="{offer}">&copy; <time>2019</time> ABC</a></li>
+ </ul>
+</nav>
+
+
+<script type="text/javascript" src="images/abc.bundle.2.5.0.min.js"></script>
+
+
+<script type="text/javascript" src="images/abc.mylogin.embedded.js"></script>
+<script type="text/javascript">ABC.MyLoginEmbedded.init();</script>
+
+  </body>
+  
+</html>
